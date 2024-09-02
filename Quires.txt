@@ -1,0 +1,39 @@
+Symmetrics_DataBase_Queries for oracle
+
+
+
+INSERT INTO sym_trigger (trigger_id, source_table_name, channel_id, sync_on_insert, sync_on_update, sync_on_delete, create_time, LAST_UPDATE_TIME)
+VALUES ('trigger_subgr_mst', 'studentinfo', 'default', 1, 1, 1, SYSDATE, SYSDATE);
+
+SELECT * FROM sym_trigger WHERE trigger_id = 'trigger_subgr_mst';
+
+
+INSERT INTO sym_trigger (
+    trigger_id, source_table_name, channel_id, sync_on_insert, sync_on_update, sync_on_delete, stream_row,create_time, LAST_UPDATE_TIME)
+VALUES (
+    'trigger_subgr_mst', 'subgr_mst', 'default', 1, 1, 1, 1,SYSDATE, SYSDATE);
+
+
+
+INSERT INTO sym_trigger (
+    trigger_id, source_table_name, channel_id, sync_on_insert, sync_on_update, sync_on_delete, stream_row,create_time,LAST_UPDATE_TIME)
+VALUES (
+    'trigger_subgr_mst', 'subgr_mst', '2', 1, 1, 1, 1,SYSDATE,SYSDATE);
+
+
+
+
+INSERT INTO sym_trigger (
+    trigger_id, source_table_name, channel_id, sync_on_insert, sync_on_update, sync_on_delete, stream_row,create_time,LAST_UPDATE_TIME)
+VALUES (
+    'trigger_SMS_MST', 'SMS_MST', 'default', 1, 1, 1, 1,SYSDATE,SYSDATE);
+
+INSERT INTO sym_trigger (
+    trigger_id, source_table_name, channel_id, sync_on_insert, sync_on_update, sync_on_delete, stream_row,create_time,LAST_UPDATE_TIME)
+VALUES (
+    'trigger_risk_trn', 'risk_trn', 'default', 1, 1, 1, 1,SYSDATE,SYSDATE);
+
+INSERT INTO sym_trigger (
+    trigger_id, source_table_name, channel_id, sync_on_insert, sync_on_update, sync_on_delete, stream_row,create_time,LAST_UPDATE_TIME)
+VALUES (
+    'trigger_rpm', 'rpm', 'default', 1, 1, 1, 1,SYSDATE,SYSDATE);
